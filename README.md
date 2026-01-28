@@ -2,9 +2,6 @@
 
 A sleek, responsive, and terminal-styled landing page created to house all my professional digital footprints in one place. This project was built to practice front-end development while showcasing my interest in the **Cybersecurity** field.
 
-## 🚀 Live Demo
-[View the Live Site Here](PASTE_YOUR_GITHUB_PAGES_LINK_HERE)
-
 ## 🛠️ Features
 * **Terminal Aesthetic:** Neon green glow with a scanline overlay for a retro "hacker" vibe.
 * **Responsive Design:** Fully optimized for mobile and desktop screens.
