@@ -1,0 +1,82 @@
+:root {
+    --hacker-green: #00ff41;
+    --dark-bg: #0a0a0a;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--hacker-green);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    z-index: 2;
+}
+
+/* Glowing Profile Circle */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--hacker-green);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 15px var(--hacker-green);
+    overflow: hidden; /* This crops the image into a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This prevents the photo from looking stretched */
+}
+/* Link Buttons */
+.link-card {
+    display: block;
+    padding: 15px;
+    margin: 15px 0;
+    text-decoration: none;
+    color: var(--hacker-green);
+    border: 1px solid var(--hacker-green);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    background: rgba(0, 255, 65, 0.05);
+}
+
+.link-card:hover {
+    background: var(--hacker-green);
+    color: var(--dark-bg);
+    box-shadow: 0 0 20px var(--hacker-green);
+    transform: scale(1.05);
+}
+
+/* Scanline Effect */
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.25) 50%
+    ), linear-gradient(
+        90deg, 
+        rgba(255, 0, 0, 0.06), 
+        rgba(0, 255, 0, 0.02), 
+        rgba(0, 0, 153, 0.06)
+    );
+    background-size: 100% 4px, 3px 100%;
+    pointer-events: none;
+}
